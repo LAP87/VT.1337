@@ -1,0 +1,10 @@
+api:
+  listen: ":1984"
+  origin: "*"          # CORS så Mainsail får hämta video från port 1984
+rtsp:
+  listen: ":8554"
+webrtc:
+  listen: ":8555"
+
+streams:
+  camera1: tapo://Rappakalja123!@192.168.50.128?channel=0&subtype=0
